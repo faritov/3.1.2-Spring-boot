@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>New User</title>
+</head>
+<body>
+<form th:method="POST" th:action="@{/users}" th:object="${user}">
+    <label for="name">Name</label>
+    <input name="name" type="text" id="name"/>
+
+    <br/>
+
+    <label for="lastName">Last Name</label>
+    <input name="lastName" type="text" id="lastName"/>
+
+    <br/>
+
+    <label for="age">Age</label>
+    <input name="age" type="text" id="age"/>
+
+    <br/>
+
+    <label for="email">Email</label>
+    <input name="email" type="text" id="email"/>
+
+    <br/>
+
+    <label for="password">Password</label>
+    <input name="password" type="text" id="password"/>
+
+    <br/>
+
+    <label for="role">Role</label>
+    <input name="role" type="text" id="role"/>
+
+    <br/>
+
+    <input type="submit" value="Create!"/>
+
+</form>
+</body>
+</html>
